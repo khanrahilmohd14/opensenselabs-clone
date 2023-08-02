@@ -1,0 +1,65 @@
+.section-6 {
+
+    background-color: #EBF0F0;
+
+
+    &__image {
+
+        margin-bottom: 80.51px;
+        
+        img {
+            width: 100%;
+        }
+    }
+
+    &__header {
+
+        display: flex;
+        position: relative;
+
+        &__circle {
+            position: absolute;
+            left: -25px;
+            @include circle(102.52px,102.52px,#FAAF41)
+        }
+
+        &__title {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+
+            & p:nth-child(2) {
+                font-size: $x-large;
+                font-weight: bold;
+                text-shadow: 1px 1px #707070;
+            }
+
+            & > p > span {
+                color: white;
+                -webkit-text-stroke: 1px black;
+            }
+        }
+    }
+
+        &__content {
+            margin-top: 135px;
+            margin-left: 16px;  
+
+            &__text {
+                     
+                margin-top: 50px;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    top: 50%;
+                    margin-left: 15px;
+                    content: '';
+                    width: 57px;
+                    height: 2px;
+                    background-color: #FAAF41;
+                }
+            }
+
+        }
+}

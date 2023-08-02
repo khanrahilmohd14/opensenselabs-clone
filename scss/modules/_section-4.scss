@@ -1,0 +1,53 @@
+.section-4 {
+
+    padding-top: 64px;
+    position: relative;
+
+    &__circle {
+        position: absolute;
+        @include circle(49.9px,49.9px,#3787C8);
+        left: 40.45px;
+        top: 30%;
+    }
+
+    &__square {
+        position: absolute;
+        top: 60%;
+        right: 37.04px;
+        height: 45.62px;
+        width: 45.2px;
+        background-color: #DF4E31;
+
+        &__shape {
+            height: 100%;
+            width: 100%;
+        }
+
+        &__line {
+            height: 75%;
+            width: 3px;
+            background-color: white;
+            transform: rotateZ(45deg);
+            position: absolute;
+            top: 5px;
+            left: 20px;
+        }
+    }
+
+    &__card {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 100px 78px 100px;
+
+        &__count {
+            font-size: 100px;
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        &__heading {
+            font-size: 30px;
+        }
+    }
+}

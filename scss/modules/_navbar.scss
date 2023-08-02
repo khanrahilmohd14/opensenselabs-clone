@@ -1,0 +1,45 @@
+.section-1__header {
+
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        height: 68.39px;
+        width: 102.49px;
+        transform: rotateZ(-25deg);
+    }
+
+    &__nav {
+
+        ul {
+
+            height: 158px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            li {
+                font-size: $large;
+                font-weight: bold;
+                color: nth($colorPalette,2);
+
+                &:nth-child(5) {
+                    position: relative;
+                    color: nth($colorPalette,1);
+
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        height: 2px;
+                        width: 45px;
+                        background-color: nth($colorPalette,1);
+                        top: 50%;
+                        left: -50%;
+                    }
+                }
+
+            }
+            
+        }
+    }
+}

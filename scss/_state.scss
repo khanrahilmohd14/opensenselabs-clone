@@ -1,0 +1,43 @@
+
+.section-1__content__upper > p {
+    &:nth-child(2){
+        &:hover {
+            color: #3787C8;
+        }
+    }
+    
+    &:nth-child(3) {
+        &:hover {
+            color: #E14B32;
+        }
+    }
+}
+
+.section-2__content__lower:hover {
+    font-weight: bold;
+}
+
+.section-3__content .box:hover {
+    background-color: #000000;
+    
+    .box__para {
+        color: #EFEFEF;
+    }
+
+}
+
+.section-5__content__logo > img:hover {
+    filter: none;
+} 
+
+.section-6__content__text:hover {
+    font-weight: bold;
+}
+
+.section-7__footer button:hover {
+    background-color: #FAAF41;
+}
+
+.section-9__content__footer > button:hover {
+    background-color: #FAAF41;
+}

@@ -1,0 +1,96 @@
+.section-3 {
+
+    padding-top: 50px;
+    background-color: #EBF0F0;
+
+    &__header {
+
+        padding-bottom: 185px;
+
+        display: flex;
+        position: relative;
+
+        &__circle {
+            position: absolute;
+            left: -25px;
+            @include circle(102.52px,102.52px,#E14B32)
+        }
+
+        &__title {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+
+            & p:nth-child(2) {
+                font-size: $x-large;
+                font-weight: bold;
+                text-shadow: 1px 1px #707070;
+            }
+        }
+    }
+
+    &__content {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        .box {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 29px;
+            height: 270px;
+            width: 127px;
+            border: 1px solid #D9D9D9;
+
+
+            &:nth-child(4) {
+                display: none;
+            }
+
+            &:nth-child(8) {
+                display: none;
+            }
+
+            &__numbering {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 16px;
+                color: #A5A5A5;
+                font-size: 11px;
+            }
+            
+
+            &__square {
+                height: 24px;
+                width: 24px;
+                position: relative;
+
+                &__shape {
+                    height: 100%;
+                    width: 100%;
+                    background: linear-gradient(180deg,#E14B32,#3787C8);
+
+                }
+
+                &__line {
+                    position: absolute;
+                    height: 75%;
+                    width: 2px;
+                    background-color: white;
+                    left: 10px;
+                    transform: rotateZ(-55deg);
+                    top: 3px;
+                }
+            }
+
+            &__para {
+                font-size: 30px;
+                color: black;
+            }
+        }
+    }
+}

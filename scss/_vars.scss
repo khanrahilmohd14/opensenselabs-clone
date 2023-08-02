@@ -1,0 +1,21 @@
+$x-large : 36px;
+$large : 18px;
+$medium : 14px;
+
+$colorPalette : #E14B32,#FFFFFF,#232526,#FAAF40;
+
+
+@mixin circle($h,$w,$c){
+    height: $h;
+    width: $w;
+    border-radius: 100%;
+    background-color: $c;
+}
+
+@mixin triangle($w,$c){
+    width: 0;
+    height: 0;
+    border-left: $w solid transparent;
+    border-right: $w solid transparent;
+    border-bottom: $w solid $c;
+}

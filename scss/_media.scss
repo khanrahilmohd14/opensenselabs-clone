@@ -1,0 +1,302 @@
+@media only screen and (min-width: 1024px){
+    
+    // <<<<======================== FOR SECTION -1 ========================>>>>
+    .section-1 {
+        &__header {
+            &__nav {
+                width: 100%;
+                margin-left: 100px;
+                
+                & > ul {
+                    flex-direction: row;
+                    justify-content: normal;
+                    gap: 66px;
+                    
+                    & > li {
+                        &:nth-child(5) {
+
+                            text-align: end;
+                            margin-left: auto;
+                            
+                            &::before {
+                                top: 10px;
+                                left: initial;
+                                right: 110px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+
+        }
+
+        &__content {
+
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 50px;
+
+            &__upper {
+                & > p{
+                    &:nth-child(2) {
+                        display: inline;
+                        margin-right: 33.5px;
+                    }
+                    &:nth-child(3) {
+                        display: inline;
+                    }
+
+                    &:nth-child(4) {
+                        font-size: 30px;
+                    }
+                }   
+
+                &__triangle {
+                    right: -50%;
+                }
+            }
+
+            &__lower {
+                margin-top: 55%;
+                padding-bottom: 137px;
+                width: 320px;
+                margin-left: auto;
+
+                &__circle {
+                    display: initial;
+                }
+            }
+        }
+    }
+
+    // <<<<======================== FOR SECTION -2 ========================>>>>
+    .section-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 150px 217px;
+        column-gap: 135px;
+
+        &__triangle {
+            right: 15%;
+        }
+        
+        &__content {
+            margin-top: 0;
+        }
+    }
+    // <<<<======================== FOR SECTION -3 ========================>>>>
+    .section-3 {
+        position: relative;
+        padding: 0 150px;
+        padding-top: 0;
+    
+        &__header {
+            padding-bottom: 0;
+            top: 125px;
+            left: 50px;
+        }
+    
+        &__content {
+    
+    
+            justify-content: initial;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+            .box {
+                height: 351px;
+                width: 261px;
+                // border-right: none;
+                // border-top: none;
+                border-left: none;
+    
+                & .hide {
+                    display: none;
+                }
+    
+                &:nth-child(1) {
+                    border-left: 1px solid #d9d9d9;
+                }
+    
+                &:nth-child(2) {
+                    // border-left: none;
+                }
+    
+                &:nth-child(4) {
+                    display: flex;
+                    // border-right: 1px solid #D9D9D9;
+    
+                }
+    
+                &:nth-child(8) {
+                    display: flex;
+                    // border-right: 1px solid #D9D9D9;
+    
+                }
+            }
+        }
+    }
+
+    // <<<<======================== FOR SECTION -4 ========================>>>>
+    .section-4 {
+        display: flex;
+        padding: 200px;
+        justify-content: center;
+
+        &__circle {
+            left: 35%;
+            top: 15%;
+        }
+
+        &__square {
+            right: 40%;
+            bottom: 15%;
+        }
+    }
+
+    // <<<<======================== FOR SECTION -5 ========================>>>>
+    .section-5 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 150px;
+        align-items: center;        
+    }
+
+    // <<<<======================== FOR SECTION -6 ========================>>>>
+    .section-6 {
+        
+        &__sub-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+    
+        &__image img {
+            height: 350px;
+        }
+    }
+
+    // <<<<======================== FOR SECTION -7 ========================>>>>
+    .section-7 {
+
+        padding: 108.01px 217px 100.67px 217px;
+        
+        &__sub-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 135px;
+            align-items: center;
+        }
+        
+        &__content {
+            margin-bottom: 0;
+        }
+    }
+    
+    // <<<<======================== FOR SECTION -8 ========================>>>>
+    .section-8 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        column-gap: 131.5px;
+    
+        &__content__about {
+            margin-top: 150px;
+        }
+    }
+
+    // <<<<======================== FOR SECTION -9 ========================>>>>
+    .section-9 {
+        &__content {
+    
+            &__fields {
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 10px;
+    
+                > input {
+                    width: 28%;
+                }
+            }
+    
+            &__footer {
+                justify-content: flex-end;
+    
+                button {
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
+    
+    // <<<<======================== FOR SECTION -10 ========================>>>>
+    .section-10 {
+    
+        padding: 75px 217px 25px 217px;
+    
+        &__trademark {
+            top: 45%;
+        }
+        
+        &__sub-section {
+            display: flex;
+            gap: 25px;
+            justify-content: space-between;
+        }
+    
+        &__sub-sections {
+            &__partners {
+                display: flex;
+                gap: 75px;
+                justify-content: center;
+                align-items: center;
+    }
+            }
+    }
+
+    // <<<<======================== GLOBAL MEDIA QUERIES ========================>>>>
+    section {
+        padding-left: 217px;
+        padding-right: 217px;
+    }
+}
+
+
+// ===================================== EXTRA BREAKPOINTS ====================================================
+
+@media only screen and (max-width: 356px){
+    .section-2__content {
+        margin-top: 350px;
+    }
+}
+
+@media only screen and (min-width:1111px) and (max-width:1430px) {
+
+    .section-3 {
+        &__content {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1110px) {
+
+    .section-3 {
+        &__content {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+
+@media only screen and (min-width:0) and (max-width:400px) {
+    .section-5 {
+        &__content{
+            &__logo {
+                width: 80px;
+            }
+        }
+    }
+}
+// ===============================================================================

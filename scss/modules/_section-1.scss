@@ -1,0 +1,97 @@
+@import 'navbar';
+
+// SECTION -1 CONTENT
+
+.section-1 {
+    
+    background-color: nth($colorPalette,3);
+    position: relative;
+    overflow-x: hidden;
+
+    &__circle {
+        position: absolute;
+        right: -14px;
+        top: 50%;
+        overflow: hidden;
+        @include circle(30px,30px,#3787C8);
+
+    }
+
+    &__square {
+        height: 27.46px;
+        width: 27.21px;
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+
+        &__box {
+            height: 100%;
+            width: 100%;
+            background-color: #DF4E31;
+        }
+
+        &__line {
+            position: absolute;
+            top: 3px;
+            height: 75%;
+            width: 2px;
+            background-color: white;
+            left: 50%;
+            transform: rotateZ(45deg);
+        }
+    }
+
+    
+    &__content {
+
+        padding-bottom: 35px;
+        color: nth($colorPalette,2);
+        margin-left: 23px;
+        margin-right: 56px;
+        
+        &__upper {
+            
+            padding-bottom: 35px;
+            margin-bottom: 26px;
+            position: relative;
+            
+            > p:nth-child(2) , > p:nth-child(3) {
+                font-size: 220px;
+                font-family: "Bebas Neue", sans-serif;
+                line-height: 180px;     
+            }
+            
+            &__triangle {
+                position: absolute;
+                top: 16%;
+                right: 25px;
+                transform: rotate(225deg);
+                @include triangle(28.57px,#FAAF40)
+            }
+        }
+
+        &__lower {
+            position: relative;
+            font-size: $medium;
+
+            &__circle {
+                display: none;
+                position: absolute;
+                @include circle(90px, 90px,red);
+                top: -18%;
+                left: -14%;
+                background: linear-gradient(180deg,#E14B32,#3787C8);
+            }
+
+            & > p {
+                position: relative;
+                z-index: 1;
+            }
+
+            span {
+                color:nth($colorPalette,4);
+            }
+        }
+    }
+
+}

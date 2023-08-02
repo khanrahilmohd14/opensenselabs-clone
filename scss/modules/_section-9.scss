@@ -1,0 +1,106 @@
+.section-9 {
+
+    padding-top: 79.21px;
+    background-color: #232526;
+
+    &__header {
+
+        display: flex;
+        position: relative;
+
+        &__circle {
+            position: absolute;
+            left: -25px;
+            @include circle(102.52px,102.52px,#E14B32)
+        }
+
+        &__title {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            color: white;
+
+            & p:nth-child(2) {
+                font-size: $x-large;
+                font-weight: bold;
+                text-shadow: 1px 1px #707070;
+            }
+
+            & > p > span {
+                color: black;
+                -webkit-text-stroke: 1px white;
+            }
+        }
+    }
+
+    &__content {
+
+        padding: 0 16px;
+        margin-top: 200px;  
+
+        &__fields {
+
+            display: flex;
+            flex-direction: column;
+
+            input{
+                background-color: transparent;
+                height: 24px;
+                padding: 20px 16px;
+                border: 1px solid #555F64;
+                outline: none;
+                margin: 12px 0;
+            }
+        }
+
+        & > form {
+
+            display: flex;
+            flex-direction: column;
+
+            > textarea {
+                height: 99.52px;
+                padding: 20px 16px;
+                resize: none;
+                background-color: transparent;
+                outline: none;
+                margin-bottom: 12px;
+    
+                ::placeholder {
+                    color: #A5A5A5;
+                }
+            }
+    
+        }
+
+        &__footer {
+
+            padding: 40px 0 100px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & > button {
+                height: 48px;
+                width: 200px;
+                color: white;
+                font-weight: bold;
+                background-color: transparent;
+                border: 1px solid #555F64;
+            }   
+
+            &__sendme {
+
+                & > input {
+                    background-color: transparent;
+                }
+    
+                & > label {
+                    color: #A5A5A5;
+                    font-size: 13px;
+                }
+            }
+
+            }
+        }
+}
